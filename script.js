@@ -13,7 +13,7 @@ let lastY = 0;
 // Load our model.
 const sess = new onnx.InferenceSession();
 console.time('Load #1');
-const loadingModelPromise = sess.loadModel("./onnx_model.onnx");
+const loadingModelPromise = sess.loadModel("./onnx_model_largefc_nocuda.onnx");
 console.timeEnd('Load #1');
 
 // Add 'Draw a number here!' to the canvas.
